@@ -1,0 +1,54 @@
+table {
+          border-collapse: collapse;
+          width: calc(100% - 48px);
+          margin: 0 24px 16px 24px;
+          border: 1px solid #cd6d0f;
+          background: white;
+          font-size: 13px;
+          color: #33475b;
+        }
+        th,
+        td {
+          text-align: left;
+          padding: 8px 10px;
+          border-right: 1px solid #ddd;
+          border-bottom: 1px solid #ddd;
+          vertical-align: middle;
+        }
+        th {
+          background: #f7f7f7;
+          font-weight: 600;
+          position: relative;
+          user-select: none;
+          white-space: nowrap;
+        }
+        th.sortable:hover {
+          background: #e6f0fa;
+          cursor: pointer;
+        }
+        th:last-child,
+        td:last-child {
+          border-right: none;
+        }
+        tr:nth-child(even) {
+          background: #fbfbfb;
+        }
+        tr:hover {
+          background-color: #f0f6ff;
+        }
+        td.entityName {
+          color: #c3520d;
+          font-weight: 600;
+          white-space: nowrap;
+          cursor: default;
+        }
+        td.checkbox-cell {
+          width: 30px;
+          text-align: center;
+          padding: 6px 6px;
+        }
+        input[type="checkbox"] {
+          cursor: pointer;
+          width: 17px;
+          height: 17px;
+        }

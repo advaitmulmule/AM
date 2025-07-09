@@ -1,0 +1,27 @@
+.filters {
+          margin: 40px 150px 10px 150px;
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+        .filters select {
+          min-width: 140px;
+          border: 2px solid #103c68;
+          background: white;
+          font-weight: 600;
+          color: #103c68;
+          padding: 6px 8px;
+          font-size: 14px;
+          border-radius: 0;
+          appearance: none;
+          cursor: pointer;
+          background-image: linear-gradient(45deg, transparent 50%, #103c68 50%), linear-gradient(135deg, #103c68 50%, transparent 50%);
+          background-position: calc(100% - 15px) calc(1em), calc(100% - 10px) calc(1em);
+          background-size: 5px 5px, 5px 5px;
+          background-repeat: no-repeat;
+        }
+        .filters select:focus {
+          outline: none;
+          box-shadow: 0 0 3px #002B49;
+        }
