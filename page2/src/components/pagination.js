@@ -74,8 +74,9 @@ const Pagination = ({ currentPage, rowsPerPage, setRowsPerPage, setCurrentPage, 
               aria-label="Go to page number"
             />
           </div>
-
           
+          {//Load more button only appears if there are more entries than the current rows per page
+          filteredData.length > rowsPerPage && !showMore && (      
           <div className="load-more-container">
             <button
               className="btn"
@@ -88,6 +89,7 @@ const Pagination = ({ currentPage, rowsPerPage, setRowsPerPage, setCurrentPage, 
               Load More +
             </button>
           </div>
+        )}
     </div>
   );
 };
